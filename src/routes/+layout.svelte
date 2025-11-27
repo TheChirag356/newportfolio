@@ -1,6 +1,9 @@
 <script lang="ts">
 	import './layout.css';
 	import favicon from '$lib/assets/favicon.svg';
+	import { ModeWatcher } from 'mode-watcher';
+	import { Navbar } from '$lib/components/navbar';
+	import { Footer } from '$lib/components/footer';
 
 	let { children } = $props();
 </script>
@@ -9,4 +12,11 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
-{@render children()}
+<ModeWatcher defaultMode="dark" />
+<main class="">
+	<Navbar />
+	<div>
+		{@render children()}
+	</div>
+	<Footer />
+</main>
