@@ -29,7 +29,7 @@
 						aria-current={currentPage === href}
 						class={cn(
 							'',
-							currentPage.replace('/#', '/') === href
+							currentPage === href
 								? 'font-medium text-foreground'
 								: 'text-muted-foreground no-underline'
 						)}>{label}</a
