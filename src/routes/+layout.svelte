@@ -2,21 +2,25 @@
 	import './layout.css';
 	import favicon from '$lib/assets/favicon.ico';
 	import { ModeWatcher } from 'mode-watcher';
-	import { Navbar } from '$lib/components/navbar';
-	import { Footer } from '$lib/components/footer';
+	import Navbar from '$lib/components/navbar.svelte';
+	import Footer from '$lib/components/footer.svelte';
+	import PageTransition from '$lib/components/transition.svelte';
 
-	let { children } = $props();
+	let { children, data } = $props();
 </script>
 
 <svelte:head>
 	<link rel="icon" href={favicon} />
+	<title>Chirag's Portfolio</title>
 </svelte:head>
 
 <ModeWatcher defaultMode="dark" />
-<main class="">
+<main class="selection:bg-foreground selection:text-background">
 	<Navbar />
 	<div>
-		{@render children()}
+		<PageTransition url={data.url}>
+			{@render children()}
+		</PageTransition>
 	</div>
 	<Footer />
 </main>

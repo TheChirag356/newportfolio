@@ -2,7 +2,7 @@
 	import { page } from '$app/state';
 	const isNotFound = page.status === 404;
 
-	import { Container } from '$lib/components/container';
+	import Container from '$lib/components/container.svelte';
 	import { Button } from '$lib/components/ui/button';
 	import { Separator } from '$lib/components/separator';
 	import { cn } from '$lib/utils';
@@ -52,7 +52,8 @@
 		</h1>
 		<div class="flex flex-col items-center gap-4 text-center sm:w-1/2 sm:items-start sm:text-left">
 			<h2 class="text-lg sm:text-2xl">
-				{isNotFound ? "Couldn't find the page you were looking for." : page.error?.message}
+				<!-- {isNotFound ? "Couldn't find the page you were looking for." : page.error?.message} -->
+				{page.error?.message}
 			</h2>
 			<a href="/">
 				<Button variant="outline" class="cursor-pointer">Go to Home</Button>
