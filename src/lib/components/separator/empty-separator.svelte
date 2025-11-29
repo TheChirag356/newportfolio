@@ -1,9 +1,11 @@
 <script lang="ts">
-	let { class: className }: { class?: string } = $props();
+	let { class: className, children }: { class?: string, children?: any } = $props();
 	import { cn } from '$lib/utils';
 	import Container from '$lib/components/container.svelte';
 	import Separator from './separator.svelte';
 </script>
 
 <Separator />
-<Container class={cn('h-4', className)}></Container>
+<Container class={cn('h-4', className)}>
+	{@render children?.()}
+</Container>
