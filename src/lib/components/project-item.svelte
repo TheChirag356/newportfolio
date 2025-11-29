@@ -14,7 +14,9 @@
 </script>
 
 <div class="flex h-full w-full flex-col">
-	<button
+	<div
+		role="button"
+		tabindex="0"
 		class={cn(
 			'group flex h-18 w-full items-center justify-between border-neutral-800 pr-4 transition-all duration-300 ease-in-out',
 			isOpen ? 'border-b' : '',
@@ -26,6 +28,7 @@
 			//   : "",
 		)}
 		onclick={toggleOpen}
+		onkeydown={(e) => (e.key === 'Enter' || e.key === ' ') && toggleOpen()}
 	>
 		<div class="flex h-full w-full items-center justify-start gap-4">
 			<div class="flex h-full items-center justify-center border-r px-2">
@@ -62,7 +65,7 @@
 				<IconCaretDownFilled class="h-4 w-4 hover:text-neutral-600 hover:dark:text-neutral-200" />
 			{/if}
 		</div>
-	</button>
+	</div>
 	{#if isOpen}
 		<div
 			class={cn(
