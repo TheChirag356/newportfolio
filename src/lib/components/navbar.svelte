@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/state';
 	let currentPage = $state(page.url.pathname);
+	import ThemeToggle from './theme-toggle.svelte';
 
 	$effect(() => {
 		currentPage = (
@@ -37,6 +38,7 @@
 						)}>{label}</a
 					>
 				{/each}
+				<ThemeToggle />
 			</div>
 		</nav>
 	</Container>

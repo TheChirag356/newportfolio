@@ -10,6 +10,8 @@
 	<title>{data.meta.title} - Chirag's Blog</title>
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content="{data.meta.title} - Chirag's Blog" />
+	<meta property="og:description" content={data.meta.description} />
+	<meta property="og:image" content={data.meta.ogImage} />
 </svelte:head>
 
 <DiagonalSeparator />
