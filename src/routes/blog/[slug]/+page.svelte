@@ -12,6 +12,7 @@
 	<meta property="og:title" content="{data.meta.title} - Chirag's Blog" />
 	<meta property="og:description" content={data.meta.description} />
 	<meta property="og:image" content={data.meta.ogImage} />
+	<meta name="twitter:image" content={data.meta?.ogImage} />
 </svelte:head>
 
 <DiagonalSeparator />

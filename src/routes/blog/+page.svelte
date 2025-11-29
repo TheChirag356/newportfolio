@@ -35,7 +35,7 @@
 		<Heading class="flex h-12 items-center justify-center">Blog</Heading>
 		<Separator />
 		<Container class="flex h-10 items-center justify-start px-4 text-sm text-neutral-300">
-			A collection of articles on development, design, and ideas.
+			Thoughts, stories and ideas that would make the world a better place, maybe.
 		</Container>
 		<Separator />
 		{#each blogs as chunk}

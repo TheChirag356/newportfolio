@@ -14,7 +14,7 @@ export async function load({ params }) {
     return {
         content: newBlog.default,
         meta: newBlog.metadata,
-        ogImage: newBlog.metadata.ogImage
+        ogImage: newBlog.metadata.src
     };
 }
 
