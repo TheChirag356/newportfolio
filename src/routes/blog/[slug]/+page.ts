@@ -4,16 +4,17 @@ const blogs = import.meta.glob('../../../blogs/*.md');
 
 export async function load({ params }) {
     const slug = params.slug;
-    const match = blogs[`../../../blogs/${slug}.md`];
+    const blog = blogs[`../../../blogs/${slug}.md`];
 
-    if (!match) {
-        throw error(404, "Post not found");
+    if (!blog) {
+        throw error(404, "Blog not found");
     }
 
-    const post: any = await match();
+    const newBlog: any = await blog();
     return {
-        content: post.default,
-        meta: post.metadata
+        content: newBlog.default,
+        meta: newBlog.metadata,
+        ogImage: newBlog.metadata.ogImage
     };
 }
 

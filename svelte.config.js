@@ -21,7 +21,7 @@ const mdsvexOptions = {
 		highlighter: async (code, lang = 'text') => {
 			const highlighter = await createHighlighter({
 				themes: ['poimandres'],
-				langs: ['javascript', 'typescript', 'go', 'rust', 'c', 'python', 'cpp'],
+				langs: ['javascript', 'typescript', 'go', 'rust', 'c', 'python', 'cpp', 'bash'],
 			})
 			const html = escapeSvelte(highlighter.codeToHtml(code, { lang, theme: 'poimandres' }))
 			return `{@html \`${html}\` }`
