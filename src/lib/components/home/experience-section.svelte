@@ -21,7 +21,7 @@
 	<Container class="h-full w-full flex-col overflow-hidden">
 		{#each projects as project, idx}
 			{#if idx < 4 || isButtonOpen}
-				<ProjectItem key={idx} {project} isNotLast={idx != projects.length - 1} />
+				<ProjectItem {project} isNotLast={idx != projects.length - 1} />
 			{/if}
 		{/each}
 	</Container>
