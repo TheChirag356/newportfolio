@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Container } from '$lib/components/container';
+	import Container from '$lib/components/container.svelte';
 	import { Separator } from '$lib/components/separator';
 	import { cn } from '$lib/utils';
 

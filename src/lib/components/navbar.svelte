@@ -3,11 +3,13 @@
 	let currentPage = $state(page.url.pathname);
 
 	$effect(() => {
-		currentPage = page.url.pathname;
+		currentPage = (
+			page.url.pathname.split('/')[1] ? `/${page.url.pathname.split('/')[1]}` : '/'
+		) as typeof currentPage;
 	});
 
 	import { Separator } from '$lib/components/separator';
-	import { Container } from '$lib/components/container';
+	import Container from '$lib/components/container.svelte';
 	import { cn } from '$lib/utils';
 
 	const links = [
