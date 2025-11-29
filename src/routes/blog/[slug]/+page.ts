@@ -16,3 +16,6 @@ export async function load({ params }) {
         meta: post.metadata
     };
 }
+
+
+export const prerender = false;
