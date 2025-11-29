@@ -1,0 +1,8 @@
+{
+	"name": "portfolio",
+	"compatibility_date": "2025-11-29",
+	"compatibility_flags": ["nodejs_compat"],
+
+	// Must be exactly this for SvelteKit + Cloudflare adapter
+	"pages_build_output_dir": ".svelte-kit/cloudflare"
+}
