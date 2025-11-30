@@ -37,8 +37,9 @@
 		<Container class="flex h-10 items-center justify-start px-4 text-sm text-neutral-300">
 			Thoughts, stories and ideas that would make the world a better place, maybe.
 		</Container>
+		<Separator class="flex sm:hidden" />
 		{#each blogs as chunk}
-			<EmptyGridSeparator />
+			<EmptyGridSeparator class="hidden" />
 			<div>
 				<Container
 					class="grid h-full min-h-16 w-full grid-cols-1 items-center justify-between gap-2 sm:min-h-18 sm:grid-cols-2 sm:gap-4"
