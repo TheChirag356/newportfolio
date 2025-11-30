@@ -8,7 +8,9 @@ published: true
 src: '/images/bun-add-vs-bun-install.png'
 ---
 
-I recently made a switch from npm to bun to try the new features. Saying that it's faster than npm might be an understatement but while learning advance topics regarding bun was on my todo list, understanding the distinction between two similar commands - bun install and bun add, was on my top priority list. They may look alike but they serve different purposes and they are pretty simple to understand. With this blog you will help you manage dependencies efficiently and avoid confusion.
+I recently made a switch from npm to bun. Saying that it's faster than npm might be an understatement but while learning advance topics regarding bun was on my todo list, understanding the distinction between two similar commands - bun install and bun add, was on my top priority list. 
+
+They may look alike but they serve different purposes and they are pretty simple to understand. With this blog you will help you manage dependencies efficiently and avoid confusion.
 
 # 1. `bun add` - Installing new packages
 
@@ -58,4 +60,6 @@ bun install
 - `bun install` → Installs everything from your `package.json`.
 - `bun add` → Adds and installs new dependencies.
 
-By understanding when to use each, you’ll maintain a cleaner, faster, and more predictable Bun environment.
+See you next time, till then remember, bun add is what adds packages and bun install is what goes and install all packages. (Credit debit joke *winks*)
+
+*Ciao*
