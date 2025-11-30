@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { Snippet } from 'svelte';
 	import { fade, slide, fly } from 'svelte/transition';
-	import { easeInOut } from 'svelte/easing';
+	import { elasticInOut } from 'svelte/easing';
 
 	type Props = {
 		children: Snippet;
@@ -16,12 +16,12 @@
 		class="h-full"
 		in:slide={{
 			axis: 'y',
-			easing: easeInOut,
+			easing: elasticInOut,
 			duration: 300
 		}}
 		out:slide={{
 			axis: 'y',
-			easing: easeInOut,
+			easing: elasticInOut,
 			duration: 300
 		}}
 	>
