@@ -168,22 +168,5 @@ export const certifications: Certificate[] = [
         from: "NPTEL",
         name: "Introduction To Machine Learning",
         link: "https://archive.nptel.ac.in/noc/Ecertificate/?q=NPTEL23CS87S4440199410031182",
-    },
-    {
-        imgSrc: "/logo/google.svg",
-        imgAlt: "Google Alt",
-        date: "May 2023",
-        from: "Google Digital Garage",
-        name: "Fundamentals of Digital Marketing",
-        link: "https://learndigital.withgoogle.com/digitalgarage/validate-certificate-code",
-        extra: "Credential ID EGZ DYT SV2",
-    },
-    {
-        imgSrc: "/logo/devtown.jpeg",
-        imgAlt: "DevTown Alt",
-        date: "Mar 2023",
-        from: "DevTown",
-        name: "Certificate of Participation - DevOps for Web Development",
-        link: "https://www.cert.devtown.in/verify/1UIzWv",
-    },
+    }
 ];
