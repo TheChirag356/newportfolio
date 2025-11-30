@@ -19,7 +19,7 @@
 
 <ModeWatcher defaultMode="dark" />
 <Toaster position="bottom-center" />
-<main class="selection:bg-foreground selection:text-background">
+<main class="selection:bg-foreground selection:text-background font-mono">
 	<Navbar />
 	<div>
 		<PageTransition url={data.url}>
