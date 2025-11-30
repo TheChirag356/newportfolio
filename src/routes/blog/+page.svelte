@@ -59,7 +59,10 @@
 									<h2 class="truncate text-lg underline-offset-4 group-hover:underline">
 										{item.title}
 									</h2>
-									<div class="w-full truncate text-sm text-neutral-500">
+									<p class="w-full text-[14px] text-foreground/60">
+										{item.description}
+									</p>
+									<div class="w-full truncate text-xs text-foreground/50">
 										{item.date}
 									</div>
 								</div>

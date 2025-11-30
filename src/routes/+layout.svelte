@@ -5,6 +5,7 @@
 	import Navbar from '$lib/components/navbar.svelte';
 	import Footer from '$lib/components/footer.svelte';
 	import PageTransition from '$lib/components/transition.svelte';
+	import { Toaster } from "$lib/components/ui/sonner";
 
 	let { children, data } = $props();
 </script>
@@ -17,6 +18,7 @@
 </svelte:head>
 
 <ModeWatcher defaultMode="dark" />
+<Toaster position="bottom-center" />
 <main class="selection:bg-foreground selection:text-background">
 	<Navbar />
 	<div>
