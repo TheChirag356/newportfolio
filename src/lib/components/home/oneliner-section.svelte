@@ -10,7 +10,7 @@
 				<a
 					target="_blank"
 					href={line.href}
-					class="inline-flex items-center gap-4 py-2"
+					class="inline-flex items-center gap-4 py-2 no-underline"
 				>
 					<svelte:component this={line.icon} class="h-4" />
 					<p class="text-sm text-neutral-800 dark:text-neutral-400">
