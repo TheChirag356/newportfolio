@@ -28,6 +28,7 @@
 			{/if}
 		{/each}
 	</Container>
+	<Separator />
 	<Container class="h-full w-full flex-col overflow-hidden">
 		<Button variant="outline" onclick={toggleButton} class="cursor-pointer">
 			{isButtonOpen ? 'Show Less' : 'Show More'}

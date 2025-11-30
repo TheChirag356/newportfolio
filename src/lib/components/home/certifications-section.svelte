@@ -67,6 +67,7 @@
 			{/if}
 		{/each}
 	</Container>
+	<Separator />
 	<Container class="h-10 transition-all duration-300 ease-in-out">
 		<Button variant="outline" onclick={toggleButton} class="cursor-pointer">
 			{isButtonOpen ? 'Show Less' : 'Show More'}
