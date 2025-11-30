@@ -6,7 +6,7 @@
 	import { IconArrowUpRight, IconArrowDown } from '@tabler/icons-svelte';
 	import { cn } from '$lib/utils';
 	import { Button } from '$lib/components/ui/button';
-    import { Separator } from '$lib/components/separator';
+	import { Separator } from '$lib/components/separator';
 
 	let isButtonOpen = $state(false);
 	function toggleButton() {
@@ -21,7 +21,7 @@
 			({certifications.length})
 		</span>
 	</Heading>
-    <Separator />
+	<Separator />
 	<Container class="h-full w-full flex-col overflow-hidden">
 		{#each certifications as certificate, idx}
 			{#if idx < 4 || isButtonOpen}
@@ -29,7 +29,7 @@
 					target="blank"
 					href={certificate.link}
 					class={cn(
-						'group flex h-18 w-full items-center justify-between no-underline border-neutral-800 pr-4 transition-all duration-300 ease-in-out',
+						'group flex h-18 w-full items-center justify-between border-neutral-800 pr-4 no-underline transition-all duration-300 ease-in-out',
 						idx != certifications.length - 1 ? 'border-b' : '',
 						// Animation for items beyond the first 4
 						idx >= 4

@@ -37,7 +37,6 @@
 		<Container class="flex h-10 items-center justify-start px-4 text-sm text-neutral-300">
 			Thoughts, stories and ideas that would make the world a better place, maybe.
 		</Container>
-		<Separator />
 		{#each blogs as chunk}
 			<EmptyGridSeparator />
 			<div>
@@ -75,4 +74,5 @@
 			</div>
 		{/each}
 	</section>
+	<Separator />
 </div>

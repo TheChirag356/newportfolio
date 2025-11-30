@@ -11,6 +11,7 @@
 	const cols = 40;
 </script>
 
+<Separator />
 <Container class="h-[45vh] w-full overflow-hidden">
 	<div class="relative h-full w-full overflow-hidden">
 		<div
@@ -61,3 +62,4 @@
 		</div>
 	</div>
 </Container>
+<Separator />

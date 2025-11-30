@@ -4,6 +4,8 @@
 	import { formatDate } from '$lib/utils';
 	let { data } = $props();
 	const Content = data.content;
+
+	import { IconArrowLeft } from '@tabler/icons-svelte';
 </script>
 
 <svelte:head>
@@ -16,8 +18,16 @@
 </svelte:head>
 
 <DiagonalSeparator />
+<Container class="justify-between items-center px-4 text-sm py-3">
+	<a href="/blog" class="flex items-center gap-1 text-foreground/70 no-underline hover:underline">
+		<IconArrowLeft class="size-4" />
+		<span>Blog</span>
+	</a>
+
+</Container>
+<DiagonalSeparator />
 <article>
-	<Container class="justify-start px-4 py-1 text-4xl font-semibold">
+	<Container class="justify-start px-4 py-2 text-4xl font-semibold">
 		<hgroup>
 			<h1>{data.meta.title}</h1>
 		</hgroup>
@@ -25,10 +35,10 @@
 	<Separator />
 
 	<Container
-		class="prose prose-neutral dark:prose-invert max-w-none flex-col items-start justify-start px-4 py-4 text-justify"
+		class=" flex-col items-start justify-start px-4 py-4 text-justify"
 	>
-		<p class=" text-md text-foreground/80">{data.meta.description}</p>
+		<p class="pb-4 text-md text-foreground/80">{data.meta.description}</p>
 		<Content />
 	</Container>
 </article>
-<EmptySeparator />
+<Separator />

@@ -14,6 +14,7 @@
 </script>
 
 <div class="min-h-dvh font-mono">
+	<Separator />
 	<HeroSection />
 	<Separator />
 	<ProfileSection />
