@@ -27,7 +27,7 @@
 	</Container>
 	<Separator />
 	<Container class="h-10">
-		<div class="grid h-full grid-cols-2 items-center justify-center gap-4 divide-x border-x px-4">
+		<div class="h-full flex items-center justify-center gap-4 border-x px-4">
 			<a href="/rss" class="flex items-center justify-center">
 				<IconRss />
 			</a>
