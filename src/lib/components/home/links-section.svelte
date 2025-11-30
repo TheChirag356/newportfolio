@@ -71,7 +71,7 @@
 					{/if}
 				{/each}
 			</Container>
-			{#if idx != links.length - 1}
+			{#if idx != linksArray.length - 1}
 				<EmptyGridSeparator />
 			{/if}
 		</div>
