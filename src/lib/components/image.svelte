@@ -8,9 +8,10 @@
 		class?: string;
 		width?: number;
 		height?: number;
+		loading?: 'eager' | 'lazy' | 'auto';
 	};
 
-	let { src, alt, width, height, class: className, ...restProps }: Props = $props();
+	let { src, alt, class: className, loading = 'lazy', ...restProps }: Props = $props();
 </script>
 
-<img {src} {alt} {width} {height} loading="lazy" class={cn('', className)} {...restProps} />
+<img {src} {alt} {loading} class={cn('', className)} {...restProps} />

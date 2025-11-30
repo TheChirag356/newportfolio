@@ -42,5 +42,4 @@
 			</div>
 		</nav>
 	</Container>
-	<Separator />
 </header>

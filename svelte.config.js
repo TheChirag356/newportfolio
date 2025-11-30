@@ -28,7 +28,8 @@ const mdsvexOptions = {
 		}
 	},
 	remarkPlugins: [remarkToc],
-	rehypePlugins: [rehypeSlug]
+	rehypePlugins: [rehypeSlug],
+	smartypants: true
 }
 
 /** @type {import('@sveltejs/kit').Config} */
