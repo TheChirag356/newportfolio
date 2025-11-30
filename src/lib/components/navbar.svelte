@@ -18,6 +18,8 @@
 		{ href: '/blog', label: 'Blog' },
 		{ href: '/components', label: 'Components' }
 	];
+
+	let isMenuOpen = $state(false);
 </script>
 
 <header class="sticky inset-x-0 top-0 left-0 z-50 h-12 bg-background font-mono text-sm">
@@ -25,7 +27,7 @@
 	<Container>
 		<nav class="mx-auto flex h-24 max-w-5xl items-center justify-between px-4">
 			<div></div>
-			<div class="hidden h-full items-center justify-end gap-4 sm:flex">
+			<div class="h-full items-center justify-end gap-4 flex">
 				{#each links as { href, label }}
 					<a
 						{href}
