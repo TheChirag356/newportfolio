@@ -4,14 +4,25 @@
 	import { Button } from '$lib/components/ui/button';
 	import MouseClickAudio from '$lib/assets/sounds/mouse-click.flac';
 
-	function customToggleMode() {
+	async function customToggleMode() {
 		const audio = new Audio(MouseClickAudio);
-		audio.play();
+		await audio.play();
 		toggleMode();
+	}
+
+	function handleClick() {
+		if (!document.startViewTransition) {
+			customToggleMode();
+			return;
+		}
+
+		document.startViewTransition(() => {
+			customToggleMode();
+		});
 	}
 </script>
 
-<Button onclick={customToggleMode} variant="ghost" size="icon" class="cursor-pointer">
+<Button onclick={handleClick} variant="ghost" size="icon" class="cursor-pointer">
 	<IconSun
 		class="h-[1.2rem] w-[1.2rem] scale-100 rotate-0 transition-all dark:scale-0 dark:-rotate-90"
 	/>
