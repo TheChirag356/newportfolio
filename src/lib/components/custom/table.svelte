@@ -1,11 +1,9 @@
 <script>
-	let { class: className = "" } = $props();
+	let { class: className = '', children } = $props();
 </script>
 
-<div class="w-full overflow-x-auto my-6">
-	<table
-		class={`w-full border-collapse rounded-xl overflow-hidden text-sm ${className}`}
-	>
-		<slot />
+<div class="my-6 w-full overflow-x-auto">
+	<table class={`w-full border-collapse overflow-hidden rounded-xl text-sm ${className}`}>
+		{@render children?.()}
 	</table>
 </div>
