@@ -9,8 +9,11 @@
 		TechStackSection,
 		ExperienceSection,
 		ProjectsSection,
-		CertificationsSection
+		CertificationsSection,
+		GithubContributionSection,
 	} from '$lib/components/home';
+
+	let { data } = $props();
 </script>
 
 <div class="min-h-dvh font-mono">
@@ -27,7 +30,9 @@
 	<DiagonalSeparator />
 	<TechStackSection />
 	<DiagonalSeparator />
-	<ExperienceSection />
+	<GithubContributionSection weeks={data.weeks} />
+	<!-- <DiagonalSeparator />
+	<ExperienceSection /> -->
 	<DiagonalSeparator />
 	<ProjectsSection />
 	<DiagonalSeparator />

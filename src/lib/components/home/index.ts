@@ -7,9 +7,10 @@ import TechStackSection from "./techstack-section.svelte";
 import ExperienceSection from "./experience-section.svelte";
 import ProjectsSection from "./projects-section.svelte";
 import CertificationsSection from "./certifications-section.svelte";
+import GithubContributionSection from "./github-contribution-section.svelte";
 
 export {
     HeroSection, ProfileSection, OneLinerSection, LinksSection, AboutSection, TechStackSection, ExperienceSection,
     ProjectsSection,
-    CertificationsSection
+    CertificationsSection, GithubContributionSection
 }

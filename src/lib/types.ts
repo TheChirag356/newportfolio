@@ -6,3 +6,13 @@ export type Blog = {
     categories: string[];
     published: boolean;
 };
+
+export type Week = {
+    contributionDays: ContributionDay[];
+}
+
+export type ContributionDay = {
+    date: string;
+    contributionCount: number;
+    color: string;
+}
