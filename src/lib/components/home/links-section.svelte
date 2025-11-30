@@ -72,7 +72,9 @@
 				{/each}
 			</Container>
 			{#if idx != linksArray.length - 1}
+			<div class="sm:flex hidden">
 				<EmptyGridSeparator />
+			</div>
 			{/if}
 		</div>
 	{/each}

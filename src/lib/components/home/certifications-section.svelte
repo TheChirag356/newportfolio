@@ -40,8 +40,8 @@
 					)}
 				>
 					<div class="flex h-full w-full items-center justify-start gap-4">
-						<div class="flex h-full items-center justify-center border-r px-2">
-							<Image src={certificate.imgSrc} alt={certificate.imgAlt} width={48} height={48} />
+						<div class="flex h-full items-center justify-center border-r px-2 min-w-16">
+							<Image src={certificate.imgSrc} alt={certificate.imgAlt} width={48} height={48} class="" />
 						</div>
 						<div class="flex flex-col items-start justify-center">
 							<div class="font-medium underline-offset-4 group-hover:underline">

@@ -18,7 +18,7 @@
 		role="button"
 		tabindex="0"
 		class={cn(
-			'group flex h-18 w-full items-center justify-between border-neutral-800 pr-4 transition-all duration-300 ease-in-out',
+			'group flex h-18 w-full items-center justify-between pr-4 transition-all duration-300 ease-in-out',
 			isOpen ? 'border-b' : '',
 			isNotLast ? 'border' : ''
 			// idx >= 4
