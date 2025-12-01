@@ -33,7 +33,7 @@
 		}
 	}
 
-	const scrollingText = $derived(
+	const spotifyText = $derived(
 		spotifyData?.isPlaying ? `${spotifyData?.title} by ${spotifyData?.artist}` : ''
 	);
 </script>
@@ -72,11 +72,11 @@
 		</div>
 
 		<div class="relative z-10 flex h-full w-full flex-col justify-end">
-			<SeparatorBox class="h-3/5">
+			<SeparatorBox class="h-3/5 overflow-hidden">
 				{#key `${spotifyData?.title}-${spotifyData?.isPlaying}`}
 					{#if spotifyData?.isPlaying}
 						<div
-							class="z-10 flex items-center justify-start gap-2 px-4 py-1 text-sm text-foreground backdrop-blur-sm"
+							class="z-10 flex items-center w-full justify-start gap-2 px-4 py-1 text-sm text-foreground"
 							in:fade out:fade
 						>
 							<Image
@@ -88,8 +88,8 @@
 								)}
 							/>
 
-							<div class="scroller inline-block" class:animate={scrollingText.length > 40}>
-								<span>{scrollingText}</span>
+							<div class="text-foreground/70">
+								<span>{spotifyText}</span>
 							</div>
 						</div>
 					{/if}
@@ -168,32 +168,6 @@
 		100% {
 			transform: translateY(-55px) scale(1.25);
 			opacity: 0;
-		}
-	}
-
-	/* scrolling marquee */
-	.scroller {
-		overflow: hidden;
-		white-space: nowrap;
-		position: relative;
-		max-width: 170px;
-	}
-
-	.scroller span {
-		display: inline-block;
-		will-change: transform;
-	}
-
-	.scroller.animate span {
-		animation: marquee 10s linear infinite;
-	}
-
-	@keyframes marquee {
-		from {
-			transform: translateX(100%);
-		}
-		to {
-			transform: translateX(-100%);
 		}
 	}
 </style>
