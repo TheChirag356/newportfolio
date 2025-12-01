@@ -16,3 +16,10 @@ export type ContributionDay = {
     contributionCount: number;
     color: string;
 }
+
+export type SpotifyData = {
+    artist: string;
+    title: string;
+    albumImageUrl: string;
+    isPlaying: boolean;
+}
