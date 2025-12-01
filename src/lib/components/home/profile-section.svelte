@@ -2,7 +2,6 @@
 	import Container from '$lib/components/container.svelte';
 	import { SeparatorBox } from '$lib/components/separator';
 	import Image from '$lib/components/image.svelte';
-	import SpotifyStatus from '$lib/components/spotify-status.svelte';
 	import type { SpotifyData } from '$lib/types';
 	import { url } from '$lib/config';
 	import { cn } from '$lib/utils';
