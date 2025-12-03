@@ -24,13 +24,5 @@
 			</p>
 		</div>
 	</Container>
-	<Separator />
-	<Container class="h-10">
-		<div class="flex h-full items-center justify-center gap-4 border-x px-4">
-			<a href="/rss" class="flex items-center justify-center">
-				<IconRss />
-			</a>
-		</div>
-	</Container>
 </footer>
 <Separator />

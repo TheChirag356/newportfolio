@@ -2,6 +2,8 @@
 	import { page } from '$app/state';
 	let currentPage = $state(page.url.pathname);
 	import ThemeToggle from './theme-toggle.svelte';
+	import { IconRss } from '@tabler/icons-svelte';
+	import { Button } from '$lib/components/ui/button';
 
 	$effect(() => {
 		currentPage = (
@@ -16,6 +18,7 @@
 	const links = [
 		{ href: '/', label: 'Portfolio' },
 		{ href: '/blog', label: 'Blog' },
+		{ href: '/projects', label: 'Projects' },
 		{ href: '/components', label: 'Components' }
 	];
 
@@ -40,7 +43,17 @@
 						)}>{label}</a
 					>
 				{/each}
-				<ThemeToggle />
+				<div class="flex items-center gap-2">
+					<ThemeToggle />
+					<a href="/rss" target="_blank" rel="noopener noreferrer">
+						<Button variant="ghost" size="icon" class="cursor-pointer rounded-full">
+							<IconRss
+								class="h-[1.2rem] w-[1.2rem] scale-100 rotate-0 transition-all"
+							/>
+							<span class="sr-only">RSS</span>
+						</Button>
+					</a>
+				</div>
 			</div>
 		</nav>
 	</Container>
