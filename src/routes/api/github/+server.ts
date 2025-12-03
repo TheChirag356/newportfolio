@@ -25,23 +25,25 @@ export async function GET() {
         const response = await fetch('https://api.github.com/graphql', {
             headers: {
                 Authorization: `Bearer ${GITHUB_TOKEN}`,
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'User-Agent': 'Chirag-Arora-Portfolio',
             },
             method: 'POST',
             body: JSON.stringify({ query })
         });
 
         if (!response.ok) {
-            return json({ weeks: [], error: true }, { status: 500 });
+            return json({ weeks: [], totalContributions: 0, error: true }, { status: 500 });
         }
 
         const data = await response.json();
 
         const weeks =
             data?.data?.user?.contributionsCollection?.contributionCalendar?.weeks ?? [];
+        const totalContributions = data?.data?.user?.contributionsCollection?.contributionCalendar?.totalContributions;
 
-        return json({ weeks, error: false });
+        return json({ weeks, totalContributions, error: false });
     } catch (e) {
-        return json({ weeks: [], error: true }, { status: 500 });
+        return json({ weeks: [], totalContributions: 0, error: true }, { status: 500 });
     }
 }

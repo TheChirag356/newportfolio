@@ -3,11 +3,12 @@
 	import { Separator } from '$lib/components/separator';
 	import Heading from '$lib/components/heading.svelte';
 	import ContributionGraph from '$lib/components/contribution-graph.svelte';
-    let {weeks}: {weeks: import('$lib/types').Week[]} = $props();
+	import type { Week } from '$lib/types';
+    let {weeks, totalContributions}: {weeks: Week[], totalContributions: number} = $props();
 </script>
 
 <Heading>GitHub Contributions</Heading>
 <Separator />
-<Container>
-	<ContributionGraph {weeks} />
+<Container class="flex flex-col w-full">
+	<ContributionGraph {weeks} {totalContributions} />
 </Container>
