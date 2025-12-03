@@ -30,7 +30,7 @@
 	<DiagonalSeparator />
 	<TechStackSection />
 	<DiagonalSeparator />
-	<GithubContributionSection weeks={data.weeks} />
+	<GithubContributionSection weeks={data.weeks} totalContributions={data.totalContributions} />
 	<!-- <DiagonalSeparator />
 	<ExperienceSection /> -->
 	<DiagonalSeparator />
