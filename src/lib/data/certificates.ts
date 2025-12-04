@@ -12,6 +12,14 @@ export const certifications: Certificate[] = [
     {
         imgSrc: "/logo/google.svg",
         imgAlt: "Google Alt",
+        date: "Dec 2025",
+        from: "Google Cloud",
+        name: "Set Up a Google Cloud Network",
+        link: "https://www.credly.com/badges/af554419-7479-47c5-b01d-32dea030e932/public_url",
+    },
+    {
+        imgSrc: "/logo/google.svg",
+        imgAlt: "Google Alt",
         date: "Nov 2024",
         from: "Google Cloud",
         name: "Get Started with App Building with AppSheet",
