@@ -34,8 +34,8 @@ export const OneLiners = [
   },
   {
     icon: IconFileCvFilled,
-    text: "chiragarora.xyz/cv.pdf",
+    text: "chiragarora.xyz/cv",
     isLink: true,
-    href: "/cv.pdf",
+    href: "/cv",
   },
 ];
