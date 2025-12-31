@@ -21,4 +21,5 @@ export const techstack: Tech[] = [
   { imgSrc: "/techstack/photoshop.png", alt: "Photoshop" },
   { imgSrc: "/techstack/mongodb.png", alt: "Mongodb" },
   { imgSrc: "/techstack/illustrator.svg", alt: "Illustrator" },
+  { imgSrc: "/techstack/svelte.svg", alt: "Svelte" },
 ];
