@@ -15,7 +15,7 @@
 	// Refresh every 60 seconds
 	$effect.pre(() => {
 		updateSpotify();
-		const interval = setInterval(updateSpotify, 30000);
+		const interval = setInterval(updateSpotify, 10000);
 		return () => clearInterval(interval);
 	});
 
