@@ -41,7 +41,7 @@
 				>
 					<p class="">
 						{project.dateFrom}
-						{project.dateTo !== '' && `-${project.dateTo}`}
+						{project.dateTo ? `-${project.dateTo}` : ''}
 					</p>
 				</div>
 			</div>

@@ -12,6 +12,21 @@ export type Project = {
 
 export const projects: Project[] = [
     {
+        name: "Ori UI",
+        imgSrc: "https://oriui.app/assets/logo/ori-dark.svg",
+        imgAlt: "Ori UI Alt",
+        tags: ["Svelte", "Tailwind CSS", "TypeScript", "Vite", "SvelteKit", "Shadcn-Svelte", "Vitest"],
+        dateFrom: "Dec 2025",
+        dateTo: "",
+        href: "https://oriui.app",
+        description: [
+            "Built a modern, accessible UI component library for Svelte, focused on smooth animations and production-ready components.",
+            "Integrated Anime.js to create performant micro-interactions and text animations, emphasizing clean APIs and reusability.",
+            "Designed and documented reusable components with theming support (Tailwind CSS), enabling rapid adoption and consistent UI across projects"
+        ],
+        defaultOpen: true,
+    },
+    {
         name: "Shortcut",
         imgSrc: "https://shortcut-sand.vercel.app/images/scissors.gif",
         imgAlt: "Shortcut Alt",
